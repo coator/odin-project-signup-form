@@ -1,13 +1,52 @@
+@font-face {
+    font-family: 'biryanibold';
+    src: url('/fonts/biryani-bold-webfont.woff2') format('woff2'),
+         url('/fonts/biryani-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'biryaniheavy';
+    src: url('/fonts/biryani-heavy-webfont.woff2') format('woff2'),
+         url('/fonts/biryani-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'biryanilight';
+    src: url('/fonts/biryani-light-webfont.woff2') format('woff2'),
+         url('/fonts/biryani-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'biryaniregular';
+    src: url('/fonts/biryani-regular-webfont.woff2') format('woff2'),
+         url('/fonts/biryani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root{
   appearance: none;
   -webkit-appearance: none;
   font-size: 1em;
-  font-family: 'biryaniregular', Arial, Helvetica, sans-serif;
-  background-color: skyblue;
-
+  font-family: 'biryanilight', Arial, Helvetica, sans-serif;
   height: 100%;
-
 }
+
 
 body, html {
   margin: 0;
@@ -23,36 +62,62 @@ body, html {
 }
 
 .photo-holder {
-  padding: 5px 200px 5px 5px;
+  padding: 5px 5px 5px 5px;
   color: aliceblue;
   border: 1px solid #000;
   background-image: url('/images/lucia-garo-w0LL0Vgqq3c-unsplash.jpg');
   background-size:cover;
+  min-width: 40%;
+  min-height: 100%;
   flex: 0 0 25%;
 }
 
+.photo-holder  p {
+  position: relative;
+  bottom: 0;
+}
+
 .text-holder {
-  background-color: aqua;
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  background-color: #c2d2ed;
 
 }
 
+.text-holder > *{
+  padding: 5px;
+}
 
 .signup-area {
-  border: 1px solid #000;
   flex: 1 1 auto;
+  margin-top: 10%;
+  margin-bottom: -8%;
+  padding: 20px;
+  font-size: 1.5em;
+  position:relative;
+  font-family: 'biryaniregular', Arial, Helvetica, sans-serif;
+}
+
+.signup-area span {
+  font-weight: 900;
+  font-family: 'biryanibold', Arial, Helvetica, sans-serif;
 }
 
 .form-area {
-  border: 1px solid #000;
   flex: 1 2 40%;
+  background-color: #a0bbeb;
+  box-shadow: 2px 0px 5px 0px #000;
+}
+
+.form-area:not(legend) form {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
 }
 
 .button-area {
-  border: 1px solid #000;
   flex: 1 1 auto;
 }
 
@@ -60,47 +125,3 @@ body, html {
 
 
 
-@font-face {
-    font-family: 'biryanibold';
-    src: url('biryani-bold-webfont.woff2') format('woff2'),
-         url('biryani-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'biryaniheavy';
-    src: url('biryani-heavy-webfont.woff2') format('woff2'),
-         url('biryani-heavy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'biryanilight';
-    src: url('biryani-light-webfont.woff2') format('woff2'),
-         url('biryani-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'biryaniregular';
-    src: url('biryani-regular-webfont.woff2') format('woff2'),
-         url('biryani-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
