@@ -13,40 +13,52 @@
     <p>Background Image - </p>
     </div>
     <div class="text-holder">
-  <div class="signup-area"> This page is <span>not</span> a real
+      <div class="signup-area"> This page is <span>not</span> a real
       signup page. Please put in your information below so we can disregard the request. </div>
-      <div class="form-area"> 
-        <form action="submit">
-          <legend>form info to fill here</legend>
-          <div>
-            <label for="first-name">holder</label>
-            <input type="text" placeholder="Thor">
-            <span></span>
-          </div>
-          <div>
-            <label for="first-name">holder</label>
-            <input type="text" placeholder="Thor">
-            <span></span>
-          </div>
-          <div>
-            <label for="first-name">holder</label>
-            <input type="text" placeholder="Thor">
-          </div>
-          <div>
-            <label for="first-name">holder</label>
-            <input type="text" placeholder="Thor">
-          </div>
-          <div>
-            <label for="first-name">holder</label>
-            <input type="text" placeholder="Thor">
-          </div>
-          <div>
-            <label for="first-name">holder</label>
-            <input type="text" placeholder="Thor">
-          </div>
-        </form></div>
-      <div class="button-area"> button login here</div>
+        <div class="form-area"> 
+          <form action="submit">
+          <!-- I split legend-holder and input-holder too allow
+          different grid to only align inputs. -->
+            <div class="legend-holder">
+              <legend>form info to fill here</legend>
+            </div>
+            <div class="input-holder">
+              <div>
+                <label for="first-name">First Name</label>
+                <input required type="text" placeholder="First" 
+                name="first-name">
+                <span></span>
+              </div>
+              <div>
+                <label for="last-name">Last Name</label>
+                <input required type="name" placeholder="Name"
+                name="last-name">
+                <span></span>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input required type="email" placeholder="Thor"
+                name="email">
+              </div>
+              <div>
+                <label for="phone">Telephone Number</label>
+                <input required type="tel" placeholder="Thor"
+                name="phone">
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input required type="password" name="password">
+              </div>
+              <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input required type="password" name="confirm-password">
+              </div>
+            </div>
+            </div>
+            <div class="button-area">
+               <button type="submit">Submit</button>
+              </div>
+          </form>`
     </div>
-  </div>
-</body>
+  </body>
 </html>
